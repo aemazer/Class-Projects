@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>jQuery demo</title>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+ </head>
+ <body>
+	<form action="#" method="post">
+	<p id="test">Choose how you want to travel:<br />
+	<input type="radio" name="travelmode" value="plane" onclick="$('.choice').slideUp();$('#byplane').slideDown();" />By Plane<br />
+	<input type="radio" name="travelmode" value="train" onclick="$('.choice').slideUp();$('#bytrain').slideDown();" />By Train<br />
+	<input type="radio" name="travelmode" value="car" onclick="$('.choice').slideUp();$('#bycar').slideDown();" />By Automobile</p>
+<input type="button" onclick="$('#test').slideToggle();" />
+<div id="byplane" class="choice" style="display: none;">
+Which is your favorite airline carrier? <input type="text" name="favcarrier" size="60" />
+</div>
+<div id="bytrain" class="choice" style="display: none;">
+Which train station is your favorite? <input type="text" name="favstation" size="60" />
+</div>
+<div id="bycar" class="choice" style="display: none;">
+What gas mileage do you get? <input type="text" name="mpg" size="5" />
+</div>
+
+	<input type="submit">
+	</form>
+
+ </body>
+ </html>
